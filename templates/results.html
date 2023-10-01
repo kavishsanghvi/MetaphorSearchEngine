@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Metaphor Search Results</h1>
+    <div class="results">
+        {% for result in search_response.results %}
+        <div class="search-result">
+            <h2><a href="{{ result.url }}" target="_blank">{{ result.title }}</a></h2>
+            <p class="url">{{ result.url }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

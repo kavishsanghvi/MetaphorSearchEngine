@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.results {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.search-result {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.search-result h2 {
+    font-size: 20px;
+    color: #1a0dab;
+}
+
+.search-result p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.search-result a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.search-result a:hover {
+    text-decoration: underline;
+}
+
+/* Style visited links */
+.search-result a:visited {
+    color: #4b11f2;
+}
+
+/* Style search result titles */
+.search-result h2 a {
+    text-decoration: none;
+}
+
+/* Style search result URLs */
+.search-result .url {
+    color: #006621;
+}
